@@ -1,0 +1,10 @@
+.link {
+  padding: 0.5rem 1rem;
+  transition: all .3s ease-in-out;
+  border-radius: 20px;
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
