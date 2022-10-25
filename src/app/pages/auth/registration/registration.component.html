@@ -1,0 +1,20 @@
+<div class="w-[640px] shadow-xl bg-indigo-900 mx-auto p-[2rem] mt-[3rem] rounded-lg">
+<form [formGroup]="registerForm">
+ <div class="flex flex-col gap-6 items-center">
+   <input class="form-control" placeholder="Name" formControlName="name">
+   <input class="form-control" placeholder="Surname"  formControlName="surname">
+   <input class="form-control" placeholder="Email"  formControlName="email">
+   <input class="form-control" placeholder="Phone"  formControlName="phone">
+   <input class="form-control" placeholder="Password" type="password"  formControlName="password">
+ </div>
+  <div class="flex items-start my-6  pl-[0.25rem]">
+    <input formControlName="privacyPolicy" id="default-checkbox" type="checkbox"  class="w-4 h-4 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I Agree to Privacy Policy </label>
+  </div>
+
+  <div class="flex justify-end mt-[1rem]">
+    <button class="btn bg-red-600 mr-[10px]">Cancel</button>
+    <button class="btn bg-green-600" (click)="submit()" [disabled]="registerForm.invalid">Submit</button>
+  </div>
+</form>
+</div>
