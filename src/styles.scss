@@ -4,6 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   font-family: 'Roboto', sans-serif !important;
-  background: #0f172a;
+  background: #010306cc;
   color: #ffffff;
 }
+.link {
+  padding: 0.5rem 1rem;
+  transition: all .3s ease-in-out;
+  border-radius: 20px;
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
